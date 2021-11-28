@@ -1,151 +1,151 @@
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
 }
 body {
-	height: 2000px;
+  height: 2000px;
 }
 .container {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/sahara.jpg);
-	background-position: center;
-	background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/sahara.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .boxAtas {
-	width: 100%;
-	height: 20px;
-	background-color: royalblue;
-	position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: royalblue;
+  position: absolute;
 }
 .boxBawah {
-	width: 100%;
-	height: 20px;
-	background-color: seagreen;
-	position: absolute;
-	position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: seagreen;
+  position: absolute;
+  position: relative;
 }
 .navbar {
-	margin-top: 20px;
-	margin-right: 0;
-	height: 12%;
-	display: flex;
-	align-items: center;
-	background-color: white;
-	padding: 30px;
+  margin-top: 20px;
+  margin-right: 0;
+  height: 12%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
 }
 .logo {
-	width: 230px;
-	margin-left: px;
-	cursor: pointer;
-	float: left;
+  width: 230px;
+  margin-left: px;
+  cursor: pointer;
+  float: left;
 }
 nav {
-	flex: 1;
-	text-align: right;
-	margin-left: 30px;
-	margin-right: 20px;
+  flex: 1;
+  text-align: right;
+  margin-left: 30px;
+  margin-right: 20px;
 }
 nav ul li {
-	list-style: none;
-	display: inline-flex;
-	margin-left: 10px;
-	color: #000;
-	text-align: right;
-	margin-top: 0px;
+  list-style: none;
+  display: inline-flex;
+  margin-left: 10px;
+  color: #000;
+  text-align: right;
+  margin-top: 0px;
 }
 nav ul li a {
-	text-decoration: none;
-	color: black;
-	font-size: 18px;
-	padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 5px;
 }
 nav ul li a:hover {
-	color: red;
-	/*background-color: rgb(39, 46, 59, .5);*/
-	transition: 0.5s;
-	border-radius: 5px;
+  color: red;
+  /*background-color: rgb(39, 46, 59, .5);*/
+  transition: 0.5s;
+  border-radius: 5px;
 }
 .rows {
-	display: grid;
-	justify-content: center;
-	align-content: center;
-	height: 100vh;
-	width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100%;
 }
 .rows h1 {
-	font-size: 50px;
-	color: white;
-	margin-top: 10%;
-	text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-top: 10%;
+  text-align: center;
 }
 .rows h2 {
-	color: white;
-	text-align: center;
+  color: white;
+  text-align: center;
 }
 .rows h3 {
-	color: white;
-	text-align: center;
+  color: white;
+  text-align: center;
 }
 label #btn,
 label #close {
-	color: rgb(39, 46, 59);
-	font-size: 30px;
-	float: right;
-	margin-right: 40px;
-	line-height: 80px;
-	cursor: pointer;
-	display: none;
+  color: rgb(39, 46, 59);
+  font-size: 30px;
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
 }
 #check {
-	display: none;
+  display: none;
 }
 
 @media (max-width: 576px) {
-	label #btn {
-		display: block;
-	}
+  label #btn {
+    display: block;
+  }
 
-	nav ul {
-		position: absolute;
-		width: 100%;
-		height: 86vh;
-		margin-left: -100%;
-		right: 100%;
-		top: 90px;
-		background-color: rgb(39, 46, 59, .99);
-		text-align: center;
-		transition: .5s;
-	}
+  nav ul {
+    position: absolute;
+    width: 100%;
+    height: 86vh;
+    margin-left: -100%;
+    right: 100%;
+    top: 90px;
+    background-color: rgb(39, 46, 59, 0.99);
+    text-align: center;
+    transition: 0.5s;
+  }
 
-	nav ul li {
-		text-align: center;
-		display: block;
-		line-height: 10px;
-		margin: 50px 0;
-	}
+  nav ul li {
+    text-align: center;
+    display: block;
+    line-height: 10px;
+    margin: 50px 0;
+  }
 
-	nav ul li a {
-		color: white;
-		font-size: 20px;
-	}
+  nav ul li a {
+    color: white;
+    font-size: 20px;
+  }
 
-	nav ul li a:hover {
-		color: white;
-		text-decoration: underline;
-	}
+  nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+  }
 
-	#check:checked ~ nav ul {
-		right: 0;
-	}
+  #check:checked ~ nav ul {
+    right: 0;
+  }
 
-	#check:checked ~ navbar label #btn {
-		display: none;
-	}
+  #check:checked ~ navbar label #btn {
+    display: none;
+  }
 
-	#check:checked ~ navbar label #close {
-		display: block;
-	}
+  #check:checked ~ navbar label #close {
+    display: block;
+  }
 }
